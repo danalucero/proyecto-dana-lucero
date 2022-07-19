@@ -1,0 +1,310 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*  -----------  HEADER GENERAL  -----------  */
+
+header{
+
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+
+.logo {
+
+    width: 2rem;
+    margin: 0.4rem; 
+}
+
+
+/*  HEADER - MENU  */
+
+
+.menu ul{
+
+    display: flex;
+    padding: 0.3rem;
+}
+
+.menu ul li {
+
+    list-style: none;
+    font-size: 0.9rem;
+    margin: 0.4rem; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+    
+.menu ul li a{
+
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/*  -----------   MAIN GENERAL   ----------- */
+
+
+main{
+
+    background-image: url(../img/Botanic-1146x681.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+
+/*   -----------   FOOTER GENERAL   -------------   */
+
+
+footer{
+
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    grid-area: footer;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row-reverse;
+}
+
+
+footer h2{
+
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.5rem;
+    padding: 2px 5px;
+}
+
+
+footer a{
+
+    color: aliceblue;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+
+footer div{
+
+    padding: 5px; 
+}
+
+footer div a img{
+
+    width: 1.2rem;
+}
+
+
+/*  --------------     INDEX     ----------------  */
+
+
+.contenedorIndex{
+
+    height: 100vh;
+    
+}
+
+
+.mainIndex{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imgIndex{
+
+    width: 20rem;
+    box-shadow: 3px 3px black;
+}
+
+
+.indexP1{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 1rem;
+
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    
+}
+
+
+.indexP2{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    
+}
+
+
+.bySean {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*   --------   ABOUT    --------   */
+
+
+.enlaceLogo{
+
+    width: 2rem;
+    margin: 0.4rem; 
+}
+
+
+.contenedorAbout{
+
+    height: 100vh;
+
+}
+
+.tituloAbout{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    grid-area: tituloAbout;
+    
+}
+
+.imgAbout{
+
+    width: 15rem;
+    box-shadow: 3px 3px black;
+    grid-area: imgAbout;
+
+}
+
+.parrafoAbout{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    grid-area: parrafoAbout;
+
+}
+
+.mainAbout{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.1fr 0.1fr;
+    grid-template-areas: "tituloAbout tituloAbout"
+                         "imgAbout parrafoAbout";
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*  -----   MEDIA QUERIES   ------  */
+
+
+@media screen and (max-width: 576px){
+
+    .mainAbout{
+
+        grid-template-areas: "tituloAbout"
+                             "parrafoAbout"
+                             "imgAbout";
+    
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        
+    }
+
+    .bySean {
+
+        font-size: 1.3rem;
+        border: none;
+        
+    }
+
+    .indexP1{
+
+       
+        font-style: oblique;
+        font-weight: 100;
+        font-size: 1rem;
+    
+    }
+    
+    .indexP2{
+
+        font-style: oblique;
+        font-weight: 100;
+        font-size: 1rem;
+       
+    }
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    -----  CONTACTO - FORMULARIO  -----   */
+
+
+.contactoTitulo{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+main form fieldset div label{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+
+}
