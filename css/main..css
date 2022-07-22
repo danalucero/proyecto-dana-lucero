@@ -277,6 +277,23 @@ footer div a img{
 
 
 }
+
+/*    bootstrap     */
+
+.fondo-nav{
+
+    background-color: black;
+}
+
+.color{
+
+    color: aliceblue;
+}
+
+.tamaño{
+
+    width: 40%;
+}
     
 
 
