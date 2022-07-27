@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <!-- ANIMATE.STYLE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Mrs+Saint+Delafield&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../img/thumbnail.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../css/main..css">
     <title> HULA-Contacto </title>
 </head>
@@ -14,104 +20,107 @@
 
 <body>
 
-    <header id="arriba">
+    <div class="contenedorContacto">
 
-        <a href="../index.html">
+        <header id="arriba">
 
-            <img src="../img/logo.png" alt="hula logo">
-            
-        </a>
+            <a href="../index.html">
 
-        <nav class="menu">
-
-            <ul>
-
-                <li>
-                    <a href="../index.html"> Inicio </a>
-                </li>
-               
-                <li>
-                    <a href="../pages/about.html"> About </a> 
-                </li>
+                <img class="enlaceLogo" src="../img/thumbnail.jpg" alt="hula logo">
                 
-                <li> 
-                    <a href="../pages/portfolio.html"> Portfolio </a>
-                </li>
-                
-                <li> 
-                    <a href="../pages/video.html"> Video </a> 
-                </li>
-                
-                <li> 
-                    <a href=""> Contacto </a>  
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    
-    <main>
-
-        <h1 class="tituloSeccion"> Completa el formulario y nos pondremos en contacto </h1>
-
-        <form action="" method="">
-
-            <fieldset>
-                <legend class="contactoTitulo"> Contacto </legend>
-                <div>
-                    <label for=" nombre completo "> Nombre completo </label>
-                    <input type="text" name="nombre completo" placeholder="Complete su nombre">
-                </div>
-                <div>
-                    <label for=" telefono "> Telefono </label>
-                    <input type="tel" name="telefono" placeholder="Ingrese su numero">
-                </div>
-                <div>
-                    <label for=" email "> Email </label>
-                    <input type="email" name="email" placeholder="Complete su email">
-                </div>
-                <div>
-                    <label for=" comentario "> Deje su comentario </label>
-                    <input type="text" name="comentario" placeholder="Escriba aqui su mensaje">
-                </div>
-                <div>
-                    <input class="botonFormulario" type="submit">
-                    <input class="botonFormulario"  type="reset" value="Borrar todo">
-                </div>
-            </fieldset>
-
-        </form>
-
-    </main>
-
-
-    <footer>
-
-        <div>
-
-            <a href="">
-                <img src="../img/instagram.png" alt="instagram">
             </a>
 
-            <a href="">
-                <img src="../img/teitter.png" alt="twitter">
-            </a>
+            <nav class="menu">
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html"> Inicio </a>
+                    </li>
                 
-            <a href=""> 
-                <img src="../img/youtube.png" alt="youtube">
-            </a>
+                    <li>
+                        <a href="../pages/about.html"> About </a> 
+                    </li>
+                    
+                    <li> 
+                        <a href="../pages/portfolio.html"> Portfolio </a>
+                    </li>
+                    
+                    <li> 
+                        <a href="../pages/video.html"> Video </a> 
+                    </li>
+                    
+                    <li> 
+                        <a href=""> Contacto </a>  
+                    </li>
 
-        </div>
+                </ul>
 
-        <a href="#arriba"> Volver arriba </a>
+            </nav>
 
-        <h2> Copyright 2022. Todos los derechos reservados. </h2>
+        </header>
 
-    </footer>
-    
+        
+        <main>
+
+            <h1 class="tituloContacto animate__animated animate__backInDown"> Completa el formulario y nos pondremos en contacto </h1>
+
+            <form action="" method="">
+
+                <fieldset>
+                    
+                    <div>
+                        <label class="formulario" for=" nombre completo "> Nombre completo </label>
+                        <input type="text" name="nombre completo" placeholder="Complete su nombre">
+                    </div>
+                    <div>
+                        <label class="formulario" for=" telefono "> Telefono </label>
+                        <input type="tel" name="telefono" placeholder="Ingrese su numero">
+                    </div>
+                    <div>
+                        <label class="formulario" for=" email "> Email </label>
+                        <input type="email" name="email" placeholder="Complete su email">
+                    </div>
+                    <div>
+                        <label class="formulario" for=" comentario "> Deje su comentario </label>
+                        <input type="text" name="comentario" placeholder="Escriba aqui su mensaje">
+                    </div>
+                    <div class="botones">
+                        <input class="botonFormulario" type="submit">
+                        <input class="botonFormulario"  type="reset" value="Borrar todo">
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </main>
+
+
+        <footer>
+
+            <div>
+
+                <a href="">
+                    <img src="../img/instagram.png" alt="instagram">
+                </a>
+
+                <a href="">
+                    <img src="../img/teitter.png" alt="twitter">
+                </a>
+                    
+                <a href=""> 
+                    <img src="../img/youtube.png" alt="youtube">
+                </a>
+
+            </div>
+
+            <a href="#arriba"> Volver arriba </a>
+
+            <h2> Copyright 2022. Todos los derechos reservados. </h2>
+
+        </footer>
+
+    </div>
     
 </body>
 

@@ -19,28 +19,21 @@ header{
 }
 
 
-.logo {
-
-    width: 2rem;
-    margin: 0.4rem; 
-}
-
-
 /*  HEADER - MENU  */
 
 
 .menu ul{
 
     display: flex;
-    padding: 0.3rem;
+    padding: 0.1rem;
 }
 
 .menu ul li {
 
     list-style: none;
-    font-size: 0.9rem;
-    margin: 0.6rem; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin: 1rem; 
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
@@ -56,14 +49,16 @@ header{
 }
 
 
+
 /*  -----------   MAIN GENERAL   ----------- */
 
 
 main{
 
-    background-image: url(../img/Botanic-1146x681.jpg);
+    background-color: black;
     background-size: cover;
     padding: 20px;
+    height: 100vh;
 }
 
 
@@ -74,7 +69,7 @@ footer{
 
     display: flex;
     background-color: black;
-    padding: 5px;
+    padding: 2px;
     grid-area: footer;
     justify-content: space-between;
     align-items: baseline;
@@ -84,7 +79,7 @@ footer{
 
 footer h2{
 
-    color: aliceblue;
+    color: rgb(165, 189, 211);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.5rem;
     padding: 2px 5px;
@@ -113,27 +108,436 @@ footer div a img{
 /*  --------------     INDEX     ----------------  */
 
 
+.logoIndex{
+
+    width: 6rem;
+    margin: 0.6rem;
+
+}
+
 .contenedorIndex{
 
     height: 100vh;
     
-    
 }
-
 
 .mainIndex{
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    
+}
+
+.menuIndex{
+
+    text-align: center;
+    
+}
+
+.menuIndex ul li{
+
+    font-size: 1.5rem;
+    margin: 0.6rem; 
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 2.5;
+    
+    
+}
+
+.menuIndex ul li:hover{
+
+    transform: scale(1.3);
+    
+}
+
+
+
+.menuIndex ul li a{
+
+    text-decoration: none;
+    color: whitesmoke;
+    justify-self: baseline;
+    
+}
+
+
+.bySean {
+
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 10px;
+    text-align: end;
+}
+
+
+
+/*   --------   ABOUT    --------   */
+
+
+
+.enlaceLogo{
+
+    width: 6rem;
+    margin: 0.4rem; 
+}
+
+
+.tituloAbout{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 3rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    grid-area: tituloAbout;
+    
+   
+}
+
+.imgAbout{
+
+    width: 15rem;
+    box-shadow: 3px 3px rgb(248, 245, 245);
+    grid-area: imgAbout;
+    margin: 1.5rem;
 
 }
+
+.parrafoAbout{
+
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.5;
+    
+    margin: 3rem;
+    grid-area: parrafoAbout;
+
+}
+
+.mainAbout{
+
+    display: grid;
+    grid-template-columns: 0.fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "tituloAbout tituloAbout"
+                         "imgAbout parrafoAbout";
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*   -----  PORTFOLIO  -----     */
+
+
+.tituloPortfolio{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 3rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+
+}
+
+.contenedorPortfolio main{
+
+    width: 100vh;
+}
+
+
+.contenedorPortfolio main p{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 3rem;
+    color: whitesmoke;
+    
+}
+
+
+
+
+/*   -----  VIDEO   -------    */
+
+.contenedorVideo main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloVideo{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 3rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.contenedorVideo main iframe{
+
+   margin: 0.5rem;
+
+
+}
+
+
+/*   -----   CONTACTO   ------    */
+
+
+.contenedorContacto main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tituloContacto{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 3rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+
+}
+
+main form{
+
+    width:max-content ;
+   
+}
+
+main form fieldset{
+
+    justify-content: center;
+}
+
+main form fieldset div{
+
+    margin: 2.5rem;
+}
+
+main form fieldset div label{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: whitesmoke;
+
+}
+
+.botonFormulario{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    color: whitesmoke;
+    background-color: rgb(46, 43, 43);
+    
+}
+
+.botones{
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*  -----   MEDIA QUERIES   ------  */
+
+
+@media screen and (max-width: 576px){
+
+    /* menu general */
+    
+    .menu ul{
+
+        padding: 0.1rem;
+    }
+    
+    .menu ul li {
+        font-size: 0.8rem;
+        margin: 0.5rem;  
+    }
+    
+    .enlaceLogo{
+
+        width: 5rem;
+        margin: 0.6rem; 
+    }
+
+
+    /*  about  */
+
+
+    .mainAbout{
+
+        grid-template-areas: "tituloAbout"
+                             "parrafoAbout"
+                             "imgAbout";
+    
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .tituloAbout{
+
+        font-size: 0.9rem;
+        margin: 0.5rem;
+    
+    }
+
+    .parrafoAbout{
+
+        font-size: 0.8rem;
+        text-align: justify;
+        line-height: 1.4;
+        margin: 1rem;
+    }
+
+    .imgAbout{
+
+        width: 10rem;
+    }
+
+
+    /*  video  */
+
+
+    .tituloVideo{
+
+        font-size: 0.9rem;
+        margin: 0.5rem;
+    }
+    
+    .contenedorVideo main iframe{
+    
+       margin: 0.5rem;
+
+       width: 95%;
+    
+    }
+
+
+    /*  contacto   */
+
+
+    .tituloContacto{
+
+        font-size: 0.9rem;
+        color: whitesmoke;
+        text-transform: uppercase;
+        text-align: center;
+    
+    }
+    
+    main form{
+
+        padding: 1rem;
+        
+    }
+    
+    
+    main form fieldset div{
+    
+        margin: 1rem;
+    }
+
+    
+    main form fieldset div label{
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        
+    }
+
+    .botonFormulario{
+
+        font-size: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        margin: 0.4rem;
+        
+    
+    }
+    
+   
+       
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+       
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ex index  
+
 
 
 .imgIndex{
 
     width: 20rem;
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px rgb(243, 188, 188);
 }
 
 
@@ -143,6 +547,7 @@ footer div a img{
     font-style: oblique;
     font-weight: bolder;
     font-size: 1rem;
+    color: rgb(153, 151, 151);
 
     text-align: center;
     line-height: 1.5;
@@ -156,162 +561,11 @@ footer div a img{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
     font-weight: bolder;
+    color: rgb(153, 151, 151);
     font-size: 1rem;
     text-align: center;
     line-height: 1.5;
     padding: 20px;
+
     
-}
-
-
-.bySean {
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    border: 1px solid black;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-
-/*   --------   ABOUT    --------   */
-
-
-.enlaceLogo{
-
-    width: 2rem;
-    margin: 0.4rem; 
-}
-
-
-.contenedorAbout{
-
-    height: 100vh;
-
-}
-
-.tituloAbout{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-    text-transform: uppercase;
-    text-align: center;
-    grid-area: tituloAbout;
-    
-}
-
-.imgAbout{
-
-    width: 15rem;
-    box-shadow: 3px 3px black;
-    grid-area: imgAbout;
-
-}
-
-.parrafoAbout{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9rem;
-    text-align: center;
-    line-height: 1.5;
-    padding: 20px;
-    grid-area: parrafoAbout;
-
-}
-
-.mainAbout{
-
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 0.1fr 0.1fr;
-    grid-template-areas: "tituloAbout tituloAbout"
-                         "imgAbout parrafoAbout";
-
-    justify-content: center;
-    align-items: center;
-    
-}
-
-/*  -----   MEDIA QUERIES   ------  */
-
-
-@media screen and (max-width: 576px){
-
-    .mainAbout{
-
-        grid-template-areas: "tituloAbout"
-                             "parrafoAbout"
-                             "imgAbout";
-    
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        
-    }
-
-    .bySean {
-
-        font-size: 1.3rem;
-        border: none;
-        
-    }
-
-    .indexP1{
-
-       
-        font-style: oblique;
-        font-weight: 100;
-        font-size: 1rem;
-    
-    }
-    
-    .indexP2{
-
-        font-style: oblique;
-        font-weight: 100;
-        font-size: 1rem;
-       
-    }
-
-
-}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*    -----  CONTACTO - FORMULARIO  -----   */
-
-
-.contactoTitulo{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    padding: 10px;
-
-}
-
-main form fieldset div label{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    padding: 10px;
-
-}
+}*/
