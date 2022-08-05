@@ -1,0 +1,95 @@
+/* media queries */
+@media screen and (max-width: 576px){
+    
+    /* generales */
+    header{
+
+        flex-direction: column;
+
+        .enlaceLogo{
+
+            width: 5rem;
+            margin: 0.6rem; 
+        }
+
+        .menu ul{
+
+            padding: 0.1rem;
+
+            li {
+                font-size: 0.8rem;
+                margin: 0.5rem;  
+            }
+        }
+    }
+
+    /* about */
+
+    .divMainAbout1{
+
+        .tituloAbout{
+
+            font-size: 0.9rem;
+            margin: 1rem;
+        }
+
+        .divMainAbout2{
+        
+            flex-direction: column;
+
+            .imgAbout{
+                width: 9rem;
+            }
+
+            .parrafosAbout .parrafoAbout{
+
+                font-size: 1rem;
+                line-height: 1.5;
+                margin: 0.5rem;
+            }
+        }
+    }
+
+    /* contacto */
+
+    .mainContacto{
+
+        .tituloContacto{
+
+            font-size: 0.9rem;
+            color: whitesmoke;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        form{
+
+            padding: 1rem;
+
+            fieldset div{
+    
+                margin: 1rem;
+
+                label{
+    
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.1rem;
+                }
+
+                .botones .botonFormulario{
+
+                    font-size: 1rem;
+                    padding: 0.3rem;
+                    border-radius: 0.3rem;
+                    margin: 0.4rem; 
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

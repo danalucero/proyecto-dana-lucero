@@ -1,0 +1,100 @@
+/* import */
+@import "utilities/index";
+@import "utilities/about";
+@import "utilities/contacto";
+@import "utilities/mediaqueries";
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/mapas";
+@import "utilities/extend";
+
+/* generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+
+    .enlaceLogo{
+
+        width: 6rem;
+        margin: 0.4rem; 
+    }
+    .menu ul{
+
+        display: flex;
+        padding: 0.1rem;
+
+        li {
+
+            list-style: none;
+            font-size: 1rem;
+            margin: 1rem; 
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+
+            :hover{
+
+                transform: scale(1.2);
+            }
+
+            a{
+
+                text-decoration: none;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+main{
+
+    background-color: black;
+    background-size: cover;
+    padding: 1.1rem;
+    height: 100vh;
+}
+
+footer{
+
+    display: flex;
+    background-color: black;
+    padding: 0.8rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+
+    h2{
+
+        color: rgb(165, 189, 211);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.6rem;
+        padding: 2px 5px;
+    }
+
+    a{
+
+        color: aliceblue;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    div{
+
+        display: flex;
+        flex-direction: column;
+
+        a img{
+
+            width: 1.4rem;
+        }
+    }
+
+}
